@@ -16,6 +16,8 @@ Installation: Place this file in your plugins directory and activate it in your 
 Usuage: Enclose spoiler text between <spoiler> </spoiler> or or [spoiler][/spoiler] in either blog entries or comments.
 
 Change log:
+1.6.1 - Modified yk_callback function to make it XHTML 1.0 compatible.
+
 1.6 - Added the new [] syntax to make the plugin compatible with WYSIWYG editor.
 	  [spoiler /show text/ /hide text/] :: show text and hide text will be used as the link.
 	  [spoiler /tag/] :: tag will be used as the hide tag.
@@ -70,7 +72,7 @@ function yk_callback($m)
   $spoiler_show_text = ($m[1] ? $m[1]." &#9660;" : "Show &#9660;");
   $spoiler_hide_text = ($m[2] ? $m[2]." &#9650;" : "Hide &#9650;");
   $rand = "SID".rand();
-  return "<a href='javascript:void(null);' onclick=\"s_toggleDisplay(document.getElementById('".$rand."'), this, '$spoiler_show_text', '$spoiler_hide_text');\">$spoiler_show_text</a>\n<div id='$rand' style='display:none;'>\n".
+  return "<a href=\"javascript:void(null);\" onclick=\"s_toggleDisplay(document.getElementById('".$rand."'), this, '$spoiler_show_text', '$spoiler_hide_text');\">$spoiler_show_text</a>\n<div id='$rand' style='display:none;'>\n".
     $m[3]."\n</div>";
 }
 
