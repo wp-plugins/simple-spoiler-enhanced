@@ -3,7 +3,7 @@
 Plugin Name: Simple Spoiler Enhanced
 Plugin URI: http://liberitas.com/2006/04/18/mi-plugin-simple-spoiler-enhanced/
 Description: Add show/hide text enclosed within <spoiler></spoiler> or [spoiler][/spoiler] with a link. Original idea by <a href="http://www.waikay.net">Leong Wai Kay</a>.
-Version: 1.6
+Version: 1.6.2
 Author: ]V[orlock Zernebock
 Author URI: http://liberitas.com
 
