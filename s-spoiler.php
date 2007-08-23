@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 Plugin Name: Simple Spoiler Enhanced
 Plugin URI: http://liberitas.com/2006/04/18/mi-plugin-simple-spoiler-enhanced/
@@ -16,6 +16,8 @@ Installation: Place this file in your plugins directory and activate it in your 
 Usuage: Enclose spoiler text between <spoiler> </spoiler> or or [spoiler][/spoiler] in either blog entries or comments.
 
 Change log:
+1.6.2 - Added 'php' at the beggining of the file (no idea why it wasn't present).
+
 1.6.1 - Modified yk_callback function to make it XHTML 1.0 compatible.
 
 1.6 - Added the new [] syntax to make the plugin compatible with WYSIWYG editor.
